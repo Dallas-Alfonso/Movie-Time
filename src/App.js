@@ -4,6 +4,8 @@ import axios from 'axios'
 import Search from './components/Search'
 import Results from './components/Results'
 import Popup from './components/Popup'
+import count from './components/Voting'
+import count1 from './components/Voting'
 
 function App() {
   const [state, setState] = useState({
