@@ -162,31 +162,34 @@ section {
 }
 
 
-/* Voting portion */
+/* Voting portion  Method 1 */
 
-input{
+/* input{
   width: 50px;
   border: none;
   background: none;
   color: #919191;
   font-size: 30px;
   margin: 0 10px;
-  /*pointer-events: none;*/ /* This will make searchbar on main page not function correctly. Cannot type in seach box */
-}
 
-button{
+} */
+  /*pointer-events: none;*/ /* This will make searchbar on main page not function correctly. Cannot type in seach box */
+
+
+/* button{
   color: #fff;
   background: none;
   border: none;
   font-size: 30px;
   padding: 0 15px;
   margin: 10px 0;
-  /* margin-left: 20px; */
+  
   cursor: pointer;
-}
+} */
+/* margin-left: 20px; */
 
-button:active{
+/* button:active{
   color: #004eff;
   transform: scale(1.2);
-}
+} */
 
