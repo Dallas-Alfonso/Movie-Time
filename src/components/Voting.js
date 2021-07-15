@@ -112,3 +112,19 @@ export default Voting
 // }
 
 // export default Voting
+
+
+	/* Method 2 */
+			/* <div class="wrapper">
+			<div class="like">
+				<i  class="fas fa-thumbs-up"></i>
+				
+				<br></br>
+				<input type="number" id="likeCount" value="0" name=""></input>
+			</div>
+			<div class="dislike">
+				<i class="fas fa-thumbs-down"></i>
+				<br></br>
+				<input type="number" id="dislikeCount" value="0" name=""></input>
+			</div>
+			</div> */
