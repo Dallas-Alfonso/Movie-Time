@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import firebase from "firebase";
   
   
 class App extends React.Component {
@@ -147,6 +148,10 @@ class App extends React.Component {
 
   render() {
 	  const {selected, closePopup} = this.props;
+	  const firebaseApp = firebase.apps[0];
+	  function LikeTally({}){
+		  const [womp, setwomp] =  (0);
+	  }
     return (
 	
 	<section className="popup">
@@ -172,6 +177,9 @@ class App extends React.Component {
 						<button  onClick={() => this.handleDislike()} id="dislikebtn" className={({ ["active"]: this.state.dislikeActive })}>
 							<i class="fas fa-thumbs-down">your count is{this.state.dislike}</i>
 						</button>
+						<code>
+						 <pre>{JSON.stringify(firebaseApp.options, null, 2)}</pre>
+						</code>
 					</div>
 
 
