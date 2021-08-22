@@ -5,6 +5,7 @@ import Results from './components/Results'
 import Popup from './components/Popup'
 
 function App() {
+  const [imdbID, setImdbID] = useState("");
   const [state, setState] = useState({
     s: "",
     results: [],
@@ -36,7 +37,7 @@ function App() {
   const openPopup = id => {
     axios(apiurl + "&i=" + id).then(({ data }) => {
       let result = data;
-
+      setImdbID(result.imdbID)
       console.log(result);
 
       setState(prevState => {
@@ -61,7 +62,7 @@ function App() {
 
         <Results results={state.results} openPopup={openPopup} />
 
-        {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
+        {(typeof state.selected.Title !== "undefined") ? <Popup selected={state.selected} closePopup={closePopup} imdbID={imdbID} /> : false}
 
         
       </main>

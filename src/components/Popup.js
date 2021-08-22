@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import firebase from "firebase";
+import firebase from "../util/firebase";
 
 /***************************************************************************************
 *    Title: LikesCounter
@@ -18,10 +18,12 @@ function Popup({ selected, closePopup, imdbID }) {
 
 	useEffect(() => {
 		if (!imdbID) return null;
+		console.log(imdbID)
 		// retrieve likes/dislikes from Firebase and set data
 		// ELSE set a new entry in Firebase with movieID and set data
 		const movieRef = firebase.database().ref(`${imdbID}/`);
 		movieRef.on("value", (data) => {
+			console.log(data)
 			if (data.val() !== null) {
 				setMovieData({
 					...data.val(),
@@ -33,11 +35,15 @@ function Popup({ selected, closePopup, imdbID }) {
 				});
 			}
 		});
-	}, [imdbID]);
+	},[imdbID]);
 
 	useEffect(() => {
 		if (!movieData) return null;
 		const { dislikes: down, likes: up } = movieData;
+
+		console.log(down, up)
+		console.log(movieData)
+
 		setDislikes(down);
 		setLikes(up);
 	}, [dislikes, likes, movieData]);
