@@ -18,6 +18,15 @@ Vote Like or Dislike where information is stored in a DataBase
 
 ![Click Gif Men in Black](./public/3ezgif.com-gif-maker.gif)
 
+## Set Up And Run Project
+
+1. Clone project locally
+2. In your CLI, run `npm install`
+3. Add your own API Key after Setting up file `.env` 
+\* Get API key by registering with OMDb(link in description).
+4. On root file, use CLI to run `npm start`
+5. App running on `https://localhost:3000`
+
 ## Technologies
 
 - React.JS
@@ -27,19 +36,5 @@ Vote Like or Dislike where information is stored in a DataBase
 - Font Awsome
 - The Open Movie Database - OMDb API
 
-## Run Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
