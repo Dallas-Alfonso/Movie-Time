@@ -68,8 +68,8 @@ function Popup({ selected, closePopup, imdbID }) {
 			<div className="content">
 				<h2>{ selected.Title } <span>({ selected.Year })</span></h2>
 
-				<p className="rating">Rating: {selected.imdbRating}</p>
-				<p>{selected.Director}</p>
+				{/* <p className="rating">Rating: {selected.imdbRating}</p> */}
+				<p>Director: {selected.Director} </p>
 				<div className="plot">
 
 					<img src={selected.Poster} alt=''/>
@@ -77,25 +77,23 @@ function Popup({ selected, closePopup, imdbID }) {
 					<p>{selected.Plot}</p>
 
 				</div>
-
-				<button className="close" onClick={closePopup}>Close</button>
-			</div>
-
-			{/* Voting Portion */}
-
-			<div class="voting">
-
-				<button onClick={() => handleLikeClick(imdbID)} className='counter'>
-					{/* <i class="fas fa-thumbs-up"></i> */}👍 {likes}
-				</button>
+				
+				{/* Voting Portion */}
+				
+				<div>
+					<button onClick={() => handleLikeClick(imdbID)} className='counter'>
+						<i class="fas fa-thumbs-up"></i>  {likes}
+					</button>
 					{/* <input type="number" id="input1" value="0"name=""></input> */}
-				<button onClick={() => handleDislikeClick(imdbID)} className='counter'>
-					{/* <i class="fas fa-thumbs-down"></i> */}👎 {dislikes}
-				</button>
+					<button onClick={() => handleDislikeClick(imdbID)} className='counter counter2'>
+						<i class="fas fa-thumbs-down"></i>  {dislikes}
+					</button>
 					{/* <input id="dislikeCount" type="number" id="input2" value="0"name=""></input> */}
-					
+				</div>
+				
+				<button className="close" onClick={closePopup}>Close</button>
+				
 			</div>
-			
 		</section>
 	)
 }

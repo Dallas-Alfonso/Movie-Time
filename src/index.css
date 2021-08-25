@@ -1,9 +1,22 @@
 /* Courrtesy and credit to Rafael Code.  Used as reference */
 
 .counter {
-		margin: 1rem;
+    margin: 0 0 25px;
 		font-size: 1.25rem;
+    border-style: none;
+    color:white;
+    background-color: #4584c4;
+    border-radius: 13%;
+    padding: 10px 8px;
 	}
+
+  .counter:hover{
+    background-color: #233343;;
+  }
+
+  .counter2{
+    margin: 0 0 0 3px;
+  }
 
 * {
   margin: 0;
@@ -80,12 +93,18 @@ section {
   width: 100%;
 }
 
+h3{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 .results .result h3 {
   color: #FFF;
   font-size: 20px;
   font-weight:  600;
   padding: 10px;
-  background: #445565;
+  /* background: #445565; */
   flex: 1 1 100%;
   transition: .4s ease-out;
 }
@@ -101,7 +120,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #a0a6ac;
+  background-color: #2d4153;;
 
   overflow-y: scroll;
 }
@@ -116,9 +135,12 @@ section {
   color: #FFF;
 }
 
+
+
 .popup .content h2 {
   font-size: 28px;
   font-weight: 600;
+  margin: 0 0 11px 0;
 }
 
 .popop .content h2 span {
@@ -133,13 +155,14 @@ section {
 .popup .content .plot {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px -15px 30px;
+  margin: 20px -15px 4px;
 }
 
 .popup .content .plot img {
   flex: 1 1 50%;
   max-width: 300px;
   padding: 0px 15px;
+
 }
 
 .popup .content .plot p {
@@ -169,34 +192,5 @@ section {
 }
 
 
-/* Voting portion  Method 1 */
 
-/* input{
-  width: 50px;
-  border: none;
-  background: none;
-  color: #919191;
-  font-size: 30px;
-  margin: 0 10px;
-
-} */
-  /*pointer-events: none;*/ /* This will make searchbar on main page not function correctly. Cannot type in seach box */
-
-
-/* button{
-  color: #fff;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 15px;
-  margin: 10px 0;
-  
-  cursor: pointer;
-} */
-/* margin-left: 20px; */
-
-/* button:active{
-  color: #004eff;
-  transform: scale(1.2);
-} */
 
