@@ -2,22 +2,21 @@
 
 Search through movies, click on movie for more info, and vote a Like (Thumbs Up) or Dislike (Thumbs Down).
 
-Movie Database API: http://www.omdbapi.com/
-
-
-
+The Open Movie Database: http://www.omdbapi.com/
 
 ## Features
 
-Search a Title a browse Movie Selections
+Search a Title and browse Movie Selections
 
 ![Browsing Gif One Piece](./public/ezgif.com-gif-maker.gif)
 
 Click on a Movie and get More Information
 
-![Click Gif Men in Black](./public/2ezgif.com-gif-maker.gif)
+![Click Gif The Mummy](./public/2ezgif.com-gif-maker.gif)
 
 Vote Like or Dislike where information is stored in a DataBase
+
+![Click Gif Men in Black](./public/3ezgif.com-gif-maker.gif)
 
 ## Technologies
 
