@@ -6,17 +6,11 @@ The Open Movie Database: http://www.omdbapi.com/
 
 ## Features
 
-Search a Title and browse Movie Selections
+- Search a Title and browse Movie Selections
+- Click on a Movie and get More Information
+- Vote Like or Dislike where information is stored in a DataBase
 
-![Browsing Gif One Piece](./public/ezgif.com-gif-maker.gif)
-
-Click on a Movie and get More Information
-
-![Click Gif The Mummy](./public/2ezgif.com-gif-maker.gif)
-
-Vote Like or Dislike where information is stored in a DataBase
-
-![Click Gif Men in Black](./public/3ezgif.com-gif-maker.gif)
+![Gif Movie Time](./public/Movie-Time.gif)
 
 ## Set Up And Run Project
 
