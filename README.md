@@ -10,7 +10,7 @@ The Open Movie Database: http://www.omdbapi.com/
 - Click on a Movie and get More Information
 - Vote Like or Dislike where information is stored in a DataBase
 
-![Gif Movie Time](./public/Movie-Time.gif)
+![Gif Movie Time](./public/One-Piece-new.gif)
 
 ## Set Up And Run Project
 
